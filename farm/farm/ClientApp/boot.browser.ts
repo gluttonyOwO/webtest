@@ -13,6 +13,8 @@ if (module.hot) {
         const newRootElem = document.createElement('app');
         oldRootElem!.parentNode!.insertBefore(newRootElem, oldRootElem);
         modulePromise.then(appModule => appModule.destroy());
+
+
     });
 } else {
     enableProdMode();
